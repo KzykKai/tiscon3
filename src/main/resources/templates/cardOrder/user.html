@@ -32,15 +32,36 @@
 
                             <div class="field" th:classappend="${form.hasErrors('kanjiName')} ? 'error'">
                                 <label>お名前（漢字）</label>
-                                <input type="text" name="kanjiName" id="kanjiName" th:value="${form.kanjiName}" placeholder="太田　太朗"/>
+                                <div class="two fields">
+                                    <div class="field">
+                                        <input type="text" name="kanjiName" id="kanjiFirstName" th:value="${form.kanjiName}" placeholder="例）太田"/>
+                                    </div>
+                                    <div class="field">
+                                        <input type="text" name="kanjiName2" id="kanjiLastName" th:value="${form.kanjiName}" placeholder="例）太朗"/>
+                                    </div>
+                                </div>
                             </div>
                             <div class="field" th:classappend="${form.hasErrors('kanaName')} ? 'error'">
                                 <label>お名前（カナ）</label>
-                                <input type="text" name="kanaName" id="kanaName" th:value="${form.kanaName}" placeholder="オオダ タロウ"/>
+                                <div class="two fields">
+                                    <div class="field">
+                                        <input type="text" name="kanaName" id="kanaFirstName" th:value="${form.kanaName}" placeholder="例）オオダ"/>
+                                    </div>
+                                    <div class="field">
+                                        <input type="text" name="kanaName2" id="kanaLastName" th:value="${form.kanaName}" placeholder="例）太朗"/>
+                                    </div>
+                                </div>
                             </div>
                             <div class="field" th:classappend="${form.hasErrors('alphabetName')} ? 'error'">
                                 <label>お名前（ローマ字）</label>
-                                <input type="text" name="alphabetName" th:value="${form.alphabetName}" placeholder="OODA TAROU"/>
+                                <div class="two fields">
+                                    <div class="field">
+                                        <input type="text" name="alphabetName" id="alphabetFirstName" th:value="${form.alphabetName}" placeholder="例）OODA"/>
+                                    </div>
+                                    <div class="field">
+                                        <input type="text" name="alphabetName2" id="alphabetLastName" th:value="${form.alphabetName}" placeholder="例）TAROU"/>
+                                    </div>
+                                </div>
                             </div>
                             <div class="field" th:classappend="${form.hasErrors('gender')} ? 'error'">
                                 <label>性別</label>
@@ -54,7 +75,15 @@
                             </div>
                             <div class="field" th:classappend="${form.hasErrors('zipCode')} ? 'error'">
                                 <label>郵便番号</label>
-                                <input type="text" class="zipcode" name="zipCode" th:value="${form.zipCode}" onkeyup="AjaxZip3.zip2addr(this, '', 'address', 'address')" placeholder="400-0000"/>
+                                <div class="two fields">
+                                    <div class="field">
+                                        <input type="text" class="zipcode" name="zipCode" th:value="${form.zipCode}" onkeyup="AjaxZip3.zip2addr(this, '', 'address', 'address')" placeholder="400"/>
+                                    </div>
+                                    <span class="unit">-</span>
+                                    <div class="field">
+                                        <input type="text" class="zipcode" name="zipCode2" th:value="${form.zipCode}" onkeyup="AjaxZip3.zip2addr(this, '', 'address', 'address')" placeholder="0000"/>
+                                    </div>
+                                </div>
                             </div>
                             <div class="field" th:classappend="${form.hasErrors('address')} ? 'error'">
                                 <label>ご住所</label>
