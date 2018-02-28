@@ -19,21 +19,22 @@
 
                         <form class="ui form" method="post" action="/cardOrder/">
 
-                            <!-- /*エラーがあれば表示する*/ -->
-                            <ul class="ui red basic label" th:if="${form.hasErrors()}">
-                                <li th:each="error : ${form.getErrors().entrySet()}" th:text="${error.value}"></li>
-                            </ul>
-
                             <div class="ui horizontal divider">お勤め先について</div>
 
                             <div class="ui statement">ご職業が「経営・自営業」、「会社員」、「契約・派遣社員」、「公務員」、「民間団体」、「その他（有職）」の方は、以下の項目をご入力ください。</div>
 
                             <div class="field" th:classappend="${form.hasErrors('employerName')} ? 'error'">
                                 <label>お勤め先名</label>
+                                <ul class="ui red basic label" th:if="${form.hasErrors('employerName')}">
+                                    <li th:text="${form.getErrors('employerName')}"></li>
+                                </ul>
                                 <input type="text" name="employerName" th:value="${form.employerName}" placeholder="例）株式会社〇〇"/>
                             </div>
                             <div class="field" th:classappend="${form.hasErrors('employerZipCode')} ? 'error'">
                                 <label>お勤め先郵便番号（半角数字）</label>
+                                <ul class="ui red basic label" th:if="${form.hasErrors('employerZipCode')}">
+                                    <li th:text="${form.getErrors('employerZipCode')}"></li>
+                                </ul>
                                 <div class="two fields">
                                     <div class="field">
                                         <input type="text" id="employerZipCode1st" name="employerZipCode1st" th:value="${form.employerZipCode}" placeholder="例）011"/>
@@ -46,10 +47,16 @@
                             </div>
                             <div class="field" th:classappend="${form.hasErrors('employerAddress')} ? 'error'">
                                 <label>お勤め先住所</label>
+                                <ul class="ui red basic label" th:if="${form.hasErrors('employerAddress')}">
+                                    <li th:text="${form.getErrors('employerAddress')}"></li>
+                                </ul>
                                 <input type="text" name="employerAddress" th:value="${form.employerAddress}" placeholder="住所検索結果を表示"/>
                             </div>
                             <div class="field" th:classappend="${form.hasErrors('employerPhoneNumber')} ? 'error'">
                                 <label>お勤め先電話番号（半角数字）</label>
+                                <ul class="ui red basic label" th:if="${form.hasErrors('employerPhoneNumber')}">
+                                    <li th:text="${form.getErrors('employerPhoneNumber')}"></li>
+                                </ul>
                                 <div class="three fields">
                                     <div class="field">
                                         <input type="text" id="employerPhoneNumber1st" name="employerPhoneNumber1st" th:value="${form.employerPhoneNumber}" placeholder="例）080"/>
@@ -102,14 +109,23 @@
                             </div>
                             <div class="field" th:classappend="${form.hasErrors('department')} ? 'error'">
                                 <label>所属部署</label>
+                                <ul class="ui red basic label" th:if="${form.hasErrors('department')}">
+                                    <li th:text="${form.getErrors('department')}"></li>
+                                </ul>
                                 <input type="text" name="department" th:value="${form.department}" placeholder="例）システム開発部"/>
                             </div>
                             <div class="field" th:classappend="${form.hasErrors('position')} ? 'error'">
                                 <label>役職</label>
+                                <ul class="ui red basic label" th:if="${form.hasErrors('position')}">
+                                    <li th:text="${form.getErrors('position')}"></li>
+                                </ul>
                                 <input type="text" name="position" th:value="${form.position}" placeholder="例）係長"/>
                             </div>
                             <div class="field" th:classappend="${form.hasErrors('employeeLength')} ? 'error'">
                                 <label>勤続年数（半角数字）</label>
+                                <ul class="ui red basic label" th:if="${form.hasErrors('employerlength')}">
+                                    <li th:text="${form.getErrors('employerlength')}"></li>
+                                </ul>
                                 <input type="text" class="number" name="employeeLength" th:value="${form.employeeLength}" placeholder="例）10"/><span class="unit">年</span >
                             </div>
 
