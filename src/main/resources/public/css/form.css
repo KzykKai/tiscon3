@@ -1,0 +1,30 @@
+#kanjiFirstName, #kanjiLastName, #kanaFirstName, #kanaLastName {
+    width: 10em;
+}
+#alphabetFirstName, #alphabetLastName {
+    width: 13em;
+}
+#year, #month, #day {
+    width:7em;
+}
+#zipCode1st {
+    width: 6em;
+}
+#zipCode2nd {
+    width: 9em;
+}
+#homePhoneNumber1st, #homePhoneNumber2nd, #homePhoneNumber3rd {
+    width: 9em;
+}
+#mobilePhoneNumber1st, #mobilePhoneNumber2nd, #mobilePhoneNumber3rd {
+    width: 9em;
+}
+#employerZipCode1st {
+    width: 6em;
+}
+#employerZipCode2nd {
+    width: 9em;
+}
+#employerPhoneNumber1st, #employerPhoneNumber2nd, #employerPhoneNumber3rd {
+    width: 9em;
+}
