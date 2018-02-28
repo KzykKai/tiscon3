@@ -34,7 +34,15 @@
                             </div>
                             <div class="field" th:classappend="${form.hasErrors('employerZipCode')} ? 'error'">
                                 <label>お勤め先郵便番号</label>
-                                <input type="text" name="employerZipCode" th:value="${form.employerZipCode}" placeholder="011-2222"/>
+                                <div class="two fields">
+                                    <div class="field">
+                                        <input type="text" name="employerZipCode" th:value="${form.employerZipCode}" placeholder="011"/>
+                                    </div>
+                                    <span class="unit">-</span>
+                                    <div class="field">
+                                        <input type="text" name="employerZipCode2" th:value="${form.employerZipCode}" placeholder="2222"/>
+                                    </div>
+                                </div>
                             </div>
                             <div class="field" th:classappend="${form.hasErrors('employerAddress')} ? 'error'">
                                 <label>お勤め先住所</label>
@@ -42,7 +50,19 @@
                             </div>
                             <div class="field" th:classappend="${form.hasErrors('employerPhoneNumber')} ? 'error'">
                                 <label>お勤め先電話番号</label>
-                                <input type="text" name="employerPhoneNumber" th:value="${form.employerPhoneNumber}" placeholder="080-2222-3333"/>
+                                <div class="three fields">
+                                    <div class="field">
+                                        <input type="text" name="employerPhoneNumber" th:value="${form.employerPhoneNumber}" placeholder="080"/>
+                                    </div>
+                                    <span class="unit">-</span>
+                                    <div class="field">
+                                        <input type="text" name="employerPhoneNumber2" th:value="${form.employerPhoneNumber}" placeholder="2222"/>
+                                    </div>
+                                    <span class="unit">-</span>
+                                    <div class="field">
+                                        <input type="text" name="employerPhoneNumber3" th:value="${form.employerPhoneNumber}" placeholder="3333"/>
+                                    </div>
+                                </div>
                             </div>
                             <div class="field" th:classappend="${form.hasErrors('industryType')} ? 'error'">
                                 <label>業種</label>

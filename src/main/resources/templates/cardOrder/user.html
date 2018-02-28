@@ -91,11 +91,35 @@
                             </div>
                             <div class="field" th:classappend="${form.hasErrors('homePhoneNumber')} ? 'error'">
                                 <label>自宅電話番号</label>
-                                <input type="text" name="homePhoneNumber" th:value="${form.homePhoneNumber}" placeholder="010-0000-0000"/>
+                                <div class="three fields">
+                                    <div class="field">
+                                        <input type="text" name="homePhoneNumber" th:value="${form.homePhoneNumber}" placeholder="010"/>
+                                    </div>
+                                    <span class="unit">-</span>
+                                    <div class="field">
+                                        <input type="text" name="homePhoneNumber2" th:value="${form.homePhoneNumber}" placeholder="0000"/>
+                                    </div>
+                                    <span class="unit">-</span>
+                                    <div class="field">
+                                        <input type="text" name="homePhoneNumber3" th:value="${form.homePhoneNumber}" placeholder="0000"/>
+                                    </div>
+                                </div>
                             </div>
                             <div class="field" th:classappend="${form.hasErrors('mobilePhoneNumber')} ? 'error'">
                                 <label>携帯電話番号</label>
-                                <input type="text" name="mobilePhoneNumber" th:value="${form.mobilePhoneNumber}" placeholder="080-1111-1111"/>
+                                <div class="three fields">
+                                    <div class="field">
+                                        <input type="text" name="mobilePhoneNumber" th:value="${form.mobilePhoneNumber}" placeholder="080"/>
+                                    </div>
+                                    <span class="unit">-</span>
+                                    <div class="field">
+                                        <input type="text" name="mobilePhoneNumber2" th:value="${form.mobilePhoneNumber}" placeholder="1111"/>
+                                    </div>
+                                    <span class="unit">-</span>
+                                    <div class="field">
+                                        <input type="text" name="mobilePhoneNumber3" th:value="${form.mobilePhoneNumber}" placeholder="1111"/>
+                                    </div>
+                                </div>
                             </div>
                             <div class="field" th:classappend="${form.hasErrors('emailAddress')} ? 'error'">
                                 <label>メールアドレス</label>
