@@ -1,4 +1,5 @@
 
 $(function(){
-    $.fn.autoKana("#kanjiName", "#kanaName", {katakana:true});
+    $.fn.autoKana("#kanjiFirstName", "#kanaFirstName", {katakana:true});
+    $.fn.autoKana("#kanjiLastName", "#kanaLastName", {katakana:true});
 });
