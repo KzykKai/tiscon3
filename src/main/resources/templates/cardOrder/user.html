@@ -206,7 +206,7 @@
                                 </select>　日
                             </div>
                             <div class="field" th:classappend="${form.hasErrors('zipCode')} ? 'error'">
-                                <label>郵便番号</label>
+                                <label>郵便番号（半角数字）</label>
                                 <div class="two fields">
                                     <div class="field">
                                         <input type="text" class="zipcode" id="zipCode1st" name="zipCode1st" th:value="${form.zipCode1st}" placeholder="例）400"/>
@@ -218,10 +218,10 @@
                             </div>
                             <div class="field" th:classappend="${form.hasErrors('address')} ? 'error'">
                                 <label>ご住所</label>
-                                <input type="text" name="address" th:value="${form.address}" placeholder="住所検査結果を表示"/>
+                                <input type="text" name="address" th:value="${form.address}" placeholder="住所検索結果を表示"/>
                             </div>
                             <div class="field" th:classappend="${form.hasErrors('homePhoneNumber')} ? 'error'">
-                                <label>自宅電話番号</label>
+                                <label>自宅電話番号（半角数字）</label>
                                 <div class="three fields">
                                     <div class="field">
                                         <input type="text" id="homePhoneNumber1st" name="homePhoneNumber1st" th:value="${form.homePhoneNumber1st}" placeholder="例）010"/>
@@ -237,7 +237,7 @@
                                 </div>
                             </div>
                             <div class="field" th:classappend="${form.hasErrors('mobilePhoneNumber')} ? 'error'">
-                                <label>携帯電話番号</label>
+                                <label>携帯電話番号（半角数字）</label>
                                 <div class="three fields">
                                     <div class="field">
                                         <input type="text" id="mobilePhoneNumber1st" name="mobilePhoneNumber1st" th:value="${form.mobilePhoneNumber1st}" placeholder="例）080"/>
@@ -281,11 +281,11 @@
                                 </select>
                             </div>
                             <div class="field" th:classappend="${form.hasErrors('debt')} ? 'error'">
-                                <label>ローン等のお借り入れ金額</label>
+                                <label>ローン等のお借り入れ金額（半角数字）</label>
                                 <input type="text" class="number" name="debt" th:value="${form.debt}" placeholder="例）10"/><span class="unit">万円</span>
                             </div>
                             <div class="field" th:classappend="${form.hasErrors('income')} ? 'error'">
-                                <label>昨年の所得</label>
+                                <label>昨年の所得（半角数字）</label>
                                 <input type="text" class="number" name="income" th:value="${form.income}" placeholder="例）500"/><span class="unit">万円</span>
                             </div>
                             <div class="field" th:classappend="${form.hasErrors('job')} ? 'error'">
