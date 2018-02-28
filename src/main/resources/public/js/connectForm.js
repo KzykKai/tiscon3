@@ -4,10 +4,16 @@ function connect(){
     form.appendChild(getFullName("kanjiName", "kanjiFirstName", "kanjiLastName"));
     form.appendChild(getFullName("kanaName", "kanaFirstName", "kanaLastName"));
     form.appendChild(getFullName("alphabetName", "alphabetFirstName", "alphabetLastName"));
+    form.appendChild(getFullPhoneNumber("homePhoneNumber", "homePhoneNumber1st","homePhoneNumber2nd", "homePhoneNumber3rd"))
+    form.appendChild(getFullPhoneNumber("mobilePhoneNumber", "mobilePhoneNumber1st","mobilePhoneNumber2nd", "mobilePhoneNumber3rd"))
     form.appendChild(getFullZipCode("zipCode", "zipCode1st", "zipCode2nd"))
-    //form.appendChild(getFullZipCode("employerZipCode", "employerZipCode1st", "employerZipCode2nd"))
     form.appendChild(getFullDateOfBirth());
-    console.log(document.getElementById("kanjiName").value);
+}
+
+function connect2(){
+    var form = document.forms[0];
+    form.appendChild(getFullZipCode("employerZipCode", "employerZipCode1st", "employerZipCode2nd"))
+    form.appendChild(getFullPhoneNumber("employerPhoneNumber", "employerPhoneNumber1st","employerPhoneNumber2nd", "mobilePhoneNumber3rd"))
 }
 
 function getFullName(full, first, last) {

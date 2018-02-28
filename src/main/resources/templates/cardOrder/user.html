@@ -79,138 +79,147 @@
                             </div>
                             <div class="field" th:classappend="${form.hasErrors('dateOfBirth')} ? 'error'">
                                 <label>生年月日</label>
-                                <select name="year" id="year">
-                                    <option value="">-</option>
-                                    <option value="1921" th:selected="${form.year}=='1921'">1921</option>
-                                    <option value="1922" th:selected="${form.year}=='1922'">1922</option>
-                                    <option value="1923" th:selected="${form.year}=='1923'">1923</option>
-                                    <option value="1924" th:selected="${form.year}=='1924'">1924</option>
-                                    <option value="1925" th:selected="${form.year}=='1925'">1925</option>
-                                    <option value="1926" th:selected="${form.year}=='1926'">1926</option>
-                                    <option value="1927" th:selected="${form.year}=='1927'">1927</option>
-                                    <option value="1928" th:selected="${form.year}=='1928'">1928</option>
-                                    <option value="1929" th:selected="${form.year}=='1929'">1929</option>
-                                    <option value="1930" th:selected="${form.year}=='1930'">1930</option>
-                                    <option value="1931" th:selected="${form.year}=='1931'">1931</option>
-                                    <option value="1932" th:selected="${form.year}=='1932'">1932</option>
-                                    <option value="1933" th:selected="${form.year}=='1933'">1933</option>
-                                    <option value="1934" th:selected="${form.year}=='1934'">1934</option>
-                                    <option value="1935" th:selected="${form.year}=='1935'">1935</option>
-                                    <option value="1936" th:selected="${form.year}=='1936'">1936</option>
-                                    <option value="1937" th:selected="${form.year}=='1937'">1937</option>
-                                    <option value="1938" th:selected="${form.year}=='1938'">1938</option>
-                                    <option value="1939" th:selected="${form.year}=='1939'">1939</option>
-                                    <option value="1940" th:selected="${form.year}=='1940'">1940</option>
-                                    <option value="1941" th:selected="${form.year}=='1941'">1941</option>
-                                    <option value="1942" th:selected="${form.year}=='1942'">1942</option>
-                                    <option value="1943" th:selected="${form.year}=='1943'">1943</option>
-                                    <option value="1944" th:selected="${form.year}=='1944'">1944</option>
-                                    <option value="1945" th:selected="${form.year}=='1945'">1945</option>
-                                    <option value="1946" th:selected="${form.year}=='1946'">1946</option>
-                                    <option value="1947" th:selected="${form.year}=='1947'">1947</option>
-                                    <option value="1948" th:selected="${form.year}=='1948'">1948</option>
-                                    <option value="1949" th:selected="${form.year}=='1949'">1949</option>
-                                    <option value="1950" th:selected="${form.year}=='1950'">1950</option>
-                                    <option value="1951" th:selected="${form.year}=='1951'">1951</option>
-                                    <option value="1952" th:selected="${form.year}=='1952'">1952</option>
-                                    <option value="1953" th:selected="${form.year}=='1953'">1953</option>
-                                    <option value="1954" th:selected="${form.year}=='1954'">1954</option>
-                                    <option value="1955" th:selected="${form.year}=='1955'">1955</option>
-                                    <option value="1956" th:selected="${form.year}=='1956'">1956</option>
-                                    <option value="1957" th:selected="${form.year}=='1957'">1957</option>
-                                    <option value="1958" th:selected="${form.year}=='1958'">1958</option>
-                                    <option value="1959" th:selected="${form.year}=='1959'">1959</option>
-                                    <option value="1960" th:selected="${form.year}=='1960'">1960</option>
-                                    <option value="1961" th:selected="${form.year}=='1961'">1961</option>
-                                    <option value="1962" th:selected="${form.year}=='1962'">1962</option>
-                                    <option value="1963" th:selected="${form.year}=='1963'">1963</option>
-                                    <option value="1964" th:selected="${form.year}=='1964'">1964</option>
-                                    <option value="1965" th:selected="${form.year}=='1965'">1965</option>
-                                    <option value="1966" th:selected="${form.year}=='1966'">1966</option>
-                                    <option value="1967" th:selected="${form.year}=='1967'">1967</option>
-                                    <option value="1968" th:selected="${form.year}=='1968'">1968</option>
-                                    <option value="1969" th:selected="${form.year}=='1969'">1969</option>
-                                    <option value="1970" th:selected="${form.year}=='1970'">1970</option>
-                                    <option value="1971" th:selected="${form.year}=='1971'">1971</option>
-                                    <option value="1972" th:selected="${form.year}=='1972'">1972</option>
-                                    <option value="1973" th:selected="${form.year}=='1973'">1973</option>
-                                    <option value="1974" th:selected="${form.year}=='1974'">1974</option>
-                                    <option value="1975" th:selected="${form.year}=='1975'">1975</option>
-                                    <option value="1976" th:selected="${form.year}=='1976'">1976</option>
-                                    <option value="1977" th:selected="${form.year}=='1977'">1977</option>
-                                    <option value="1978" th:selected="${form.year}=='1978'">1978</option>
-                                    <option value="1979" th:selected="${form.year}=='1979'">1979</option>
-                                    <option value="1980" th:selected="${form.year}=='1980'">1980</option>
-                                    <option value="1981" th:selected="${form.year}=='1981'">1981</option>
-                                    <option value="1982" th:selected="${form.year}=='1982'">1982</option>
-                                    <option value="1983" th:selected="${form.year}=='1983'">1983</option>
-                                    <option value="1984" th:selected="${form.year}=='1984'">1984</option>
-                                    <option value="1985" th:selected="${form.year}=='1985'">1985</option>
-                                    <option value="1986" th:selected="${form.year}=='1986'">1986</option>
-                                    <option value="1987" th:selected="${form.year}=='1987'">1987</option>
-                                    <option value="1988" th:selected="${form.year}=='1988'">1988</option>
-                                    <option value="1989" th:selected="${form.year}=='1989'">1989</option>
-                                    <option value="1990" th:selected="${form.year}=='1990'">1990</option>
-                                    <option value="1991" th:selected="${form.year}=='1991'">1991</option>
-                                    <option value="1992" th:selected="${form.year}=='1992'">1992</option>
-                                    <option value="1993" th:selected="${form.year}=='1993'">1993</option>
-                                    <option value="1994" th:selected="${form.year}=='1994'">1994</option>
-                                    <option value="1995" th:selected="${form.year}=='1995'">1995</option>
-                                    <option value="1996" th:selected="${form.year}=='1996'">1996</option>
-                                    <option value="1997" th:selected="${form.year}=='1997'">1997</option>
-                                    <option value="1998" th:selected="${form.year}=='1998'">1998</option>
-                                    <option value="1999" th:selected="${form.year}=='1999'">1999</option>
-                                    <option value="2000" th:selected="${form.year}=='2000'">2000</option>
-                                </select>　年
-                                <select name="month" id="month">
-                                    <option value="">-</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                    <option value="6">6</option>
-                                    <option value="7">7</option>
-                                    <option value="8">8</option>
-                                    <option value="9">9</option>
-                                    <option value="10">10</option>
-                                    <option value="11">11</option>
-                                    <option value="12">12</option>
-                                </select>　月
-                                <select name="day" id="day">
-                                    <option value="">-</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                    <option value="6">6</option>
-                                    <option value="7">7</option>
-                                    <option value="8">8</option>
-                                    <option value="9">9</option>
-                                    <option value="10">10</option>
-                                    <option value="11">11</option>
-                                    <option value="12">12</option>
-                                    <option value="13">13</option>
-                                    <option value="14">14</option>
-                                    <option value="15">15</option>
-                                    <option value="16">16</option>
-                                    <option value="17">17</option>
-                                    <option value="18">18</option>
-                                    <option value="19">19</option>
-                                    <option value="20">20</option>
-                                    <option value="21">21</option>
-                                    <option value="22">22</option>
-                                    <option value="23">23</option>
-                                    <option value="24">24</option>
-                                    <option value="25">25</option>
-                                    <option value="26">26</option>
-                                    <option value="27">27</option>
-                                    <option value="28">28</option>
-                                    <option value="29">29</option>
-                                    <option value="30">30</option>
-                                    <option value="31">31</option>
-                                </select>　日
+                                <div style="float:left;">
+                                    <select name="year" id="year">
+                                        <option value="">-</option>
+                                        <option value="1921" th:selected="${form.year}=='1921'">1921</option>
+                                        <option value="1922" th:selected="${form.year}=='1922'">1922</option>
+                                        <option value="1923" th:selected="${form.year}=='1923'">1923</option>
+                                        <option value="1924" th:selected="${form.year}=='1924'">1924</option>
+                                        <option value="1925" th:selected="${form.year}=='1925'">1925</option>
+                                        <option value="1926" th:selected="${form.year}=='1926'">1926</option>
+                                        <option value="1927" th:selected="${form.year}=='1927'">1927</option>
+                                        <option value="1928" th:selected="${form.year}=='1928'">1928</option>
+                                        <option value="1929" th:selected="${form.year}=='1929'">1929</option>
+                                        <option value="1930" th:selected="${form.year}=='1930'">1930</option>
+                                        <option value="1931" th:selected="${form.year}=='1931'">1931</option>
+                                        <option value="1932" th:selected="${form.year}=='1932'">1932</option>
+                                        <option value="1933" th:selected="${form.year}=='1933'">1933</option>
+                                        <option value="1934" th:selected="${form.year}=='1934'">1934</option>
+                                        <option value="1935" th:selected="${form.year}=='1935'">1935</option>
+                                        <option value="1936" th:selected="${form.year}=='1936'">1936</option>
+                                        <option value="1937" th:selected="${form.year}=='1937'">1937</option>
+                                        <option value="1938" th:selected="${form.year}=='1938'">1938</option>
+                                        <option value="1939" th:selected="${form.year}=='1939'">1939</option>
+                                        <option value="1940" th:selected="${form.year}=='1940'">1940</option>
+                                        <option value="1941" th:selected="${form.year}=='1941'">1941</option>
+                                        <option value="1942" th:selected="${form.year}=='1942'">1942</option>
+                                        <option value="1943" th:selected="${form.year}=='1943'">1943</option>
+                                        <option value="1944" th:selected="${form.year}=='1944'">1944</option>
+                                        <option value="1945" th:selected="${form.year}=='1945'">1945</option>
+                                        <option value="1946" th:selected="${form.year}=='1946'">1946</option>
+                                        <option value="1947" th:selected="${form.year}=='1947'">1947</option>
+                                        <option value="1948" th:selected="${form.year}=='1948'">1948</option>
+                                        <option value="1949" th:selected="${form.year}=='1949'">1949</option>
+                                        <option value="1950" th:selected="${form.year}=='1950'">1950</option>
+                                        <option value="1951" th:selected="${form.year}=='1951'">1951</option>
+                                        <option value="1952" th:selected="${form.year}=='1952'">1952</option>
+                                        <option value="1953" th:selected="${form.year}=='1953'">1953</option>
+                                        <option value="1954" th:selected="${form.year}=='1954'">1954</option>
+                                        <option value="1955" th:selected="${form.year}=='1955'">1955</option>
+                                        <option value="1956" th:selected="${form.year}=='1956'">1956</option>
+                                        <option value="1957" th:selected="${form.year}=='1957'">1957</option>
+                                        <option value="1958" th:selected="${form.year}=='1958'">1958</option>
+                                        <option value="1959" th:selected="${form.year}=='1959'">1959</option>
+                                        <option value="1960" th:selected="${form.year}=='1960'">1960</option>
+                                        <option value="1961" th:selected="${form.year}=='1961'">1961</option>
+                                        <option value="1962" th:selected="${form.year}=='1962'">1962</option>
+                                        <option value="1963" th:selected="${form.year}=='1963'">1963</option>
+                                        <option value="1964" th:selected="${form.year}=='1964'">1964</option>
+                                        <option value="1965" th:selected="${form.year}=='1965'">1965</option>
+                                        <option value="1966" th:selected="${form.year}=='1966'">1966</option>
+                                        <option value="1967" th:selected="${form.year}=='1967'">1967</option>
+                                        <option value="1968" th:selected="${form.year}=='1968'">1968</option>
+                                        <option value="1969" th:selected="${form.year}=='1969'">1969</option>
+                                        <option value="1970" th:selected="${form.year}=='1970'">1970</option>
+                                        <option value="1971" th:selected="${form.year}=='1971'">1971</option>
+                                        <option value="1972" th:selected="${form.year}=='1972'">1972</option>
+                                        <option value="1973" th:selected="${form.year}=='1973'">1973</option>
+                                        <option value="1974" th:selected="${form.year}=='1974'">1974</option>
+                                        <option value="1975" th:selected="${form.year}=='1975'">1975</option>
+                                        <option value="1976" th:selected="${form.year}=='1976'">1976</option>
+                                        <option value="1977" th:selected="${form.year}=='1977'">1977</option>
+                                        <option value="1978" th:selected="${form.year}=='1978'">1978</option>
+                                        <option value="1979" th:selected="${form.year}=='1979'">1979</option>
+                                        <option value="1980" th:selected="${form.year}=='1980'">1980</option>
+                                        <option value="1981" th:selected="${form.year}=='1981'">1981</option>
+                                        <option value="1982" th:selected="${form.year}=='1982'">1982</option>
+                                        <option value="1983" th:selected="${form.year}=='1983'">1983</option>
+                                        <option value="1984" th:selected="${form.year}=='1984'">1984</option>
+                                        <option value="1985" th:selected="${form.year}=='1985'">1985</option>
+                                        <option value="1986" th:selected="${form.year}=='1986'">1986</option>
+                                        <option value="1987" th:selected="${form.year}=='1987'">1987</option>
+                                        <option value="1988" th:selected="${form.year}=='1988'">1988</option>
+                                        <option value="1989" th:selected="${form.year}=='1989'">1989</option>
+                                        <option value="1990" th:selected="${form.year}=='1990'">1990</option>
+                                        <option value="1991" th:selected="${form.year}=='1991'">1991</option>
+                                        <option value="1992" th:selected="${form.year}=='1992'">1992</option>
+                                        <option value="1993" th:selected="${form.year}=='1993'">1993</option>
+                                        <option value="1994" th:selected="${form.year}=='1994'">1994</option>
+                                        <option value="1995" th:selected="${form.year}=='1995'">1995</option>
+                                        <option value="1996" th:selected="${form.year}=='1996'">1996</option>
+                                        <option value="1997" th:selected="${form.year}=='1997'">1997</option>
+                                        <option value="1998" th:selected="${form.year}=='1998'">1998</option>
+                                        <option value="1999" th:selected="${form.year}=='1999'">1999</option>
+                                        <option value="2000" th:selected="${form.year}=='2000'">2000</option>
+                                    </select>
+                                </div>
+                                <div style="float:left;"> 年 </div>
+                                <div style="float:left;">
+                                    <select name="month" id="month">
+                                        <option value="">-</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                    </select>
+                                </div>
+                                <div style="float:left;"> 月 </div>
+                                <div style="float:left;">
+                                    <select name="day" id="day">
+                                        <option value="">-</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                        <option value="13">13</option>
+                                        <option value="14">14</option>
+                                        <option value="15">15</option>
+                                        <option value="16">16</option>
+                                        <option value="17">17</option>
+                                        <option value="18">18</option>
+                                        <option value="19">19</option>
+                                        <option value="20">20</option>
+                                        <option value="21">21</option>
+                                        <option value="22">22</option>
+                                        <option value="23">23</option>
+                                        <option value="24">24</option>
+                                        <option value="25">25</option>
+                                        <option value="26">26</option>
+                                        <option value="27">27</option>
+                                        <option value="28">28</option>
+                                        <option value="29">29</option>
+                                        <option value="30">30</option>
+                                        <option value="31">31</option>
+                                    </select>
+                                </div>
+                                <div style="float:left;"> 日 </div>
                             </div>
                             <div class="field" th:classappend="${form.hasErrors('zipCode')} ? 'error'">
                                 <label>郵便番号（半角数字）</label>
@@ -219,9 +228,7 @@
                                 </ul>
                                 <div class="two fields">
                                     <div class="field">
-                                        <input type="text" class="zipcode" id="zipCode1st" name="zipCode1st" th:value="${form.zipCode1st}" placeholder="例）400"/>
-                                    </div>-
-                                    <div class="field">
+                                        <input type="text" class="zipcode" id="zipCode1st" name="zipCode1st" th:value="${form.zipCode1st}" placeholder="例）400"/>-
                                         <input type="text" class="zipcode" id="zipCode2nd" name="zipCode2nd" th:value="${form.zipCode2nd}" onkeyup="AjaxZip3.zip2addr(zipCode1st, zipCode2nd, 'address', 'address')" placeholder="例）0000"/>
                                     </div>
                                 </div>

@@ -7,6 +7,8 @@
     <title>お勤め先の入力</title>
 
     <script src="/assets/js/metrixir.client.js"></script>
+    <script src="/assets/js/ajaxzip3.js"></script>
+    <script src="/assets/js/connectForm.js"></script>
 </head>
 <body>
 <div class="full height image" layout:fragment="content">
@@ -41,7 +43,7 @@
                                     </div>
                                     <span class="unit">-</span>
                                     <div class="field">
-                                        <input type="text" id="employerZipCode2nd" name="employerZipCode2nd" th:value="${form.employerZipCode}" placeholder="例）2222"/>
+                                        <input type="text" id="employerZipCode2nd" name="employerZipCode2nd" th:value="${form.employerZipCode}" placeholder="例）2222" onkeyup="AjaxZip3.zip2addr(employerZipCode1st, employerZipCode2nd, 'employerAddress', 'employerAddress')"/>
                                     </div>
                                 </div>
                             </div>
@@ -124,7 +126,7 @@
                             <div class="field" th:classappend="${form.hasErrors('employeeLength')} ? 'error'">
                                 <label>勤続年数（半角数字）</label>
                                 <ul class="ui red basic label" th:if="${form.hasErrors('employerlength')}">
-                                    <li th:text="${form.getErrors('employerlength')}"></li>
+                                    <li th:text="${form.getErrors('employeeLength')}"></li>
                                 </ul>
                                 <input type="text" class="number" name="employeeLength" th:value="${form.employeeLength}" placeholder="例）10"/><span class="unit">年</span >
                             </div>
@@ -152,7 +154,7 @@
                                     <button class="ui button angle left icon" onclick="form.action='/cardOrder/modify';return true">戻る</button>
                                 </div>
                                 <div class="eight wide column right aligned">
-                                    <button class="ui teal button angle right icon">カードを申し込む</button>
+                                    <button class="ui teal button angle right icon" onClick="connect2()">カードを申し込む</button>
                                 </div>
                             </div>
                         </form>
