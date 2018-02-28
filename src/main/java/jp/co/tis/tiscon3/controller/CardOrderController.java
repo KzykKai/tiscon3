@@ -54,7 +54,7 @@ public class CardOrderController {
      */
     public HttpResponse inputJob(CardOrderForm form) {
         // エラーを出したくないので強制的にエラーを消す.
-        form.setErrors(null);
+        //form.setErrors(null);
 
         return templateEngine.render("cardOrder/job", "form", form);
     }
@@ -66,7 +66,7 @@ public class CardOrderController {
      */
     public HttpResponse modifyUser(CardOrderForm form) {
         // エラーを出したくないので強制的にエラーを消す.
-        form.setErrors(null);
+        //form.setErrors(null);
 
         return templateEngine.render("cardOrder/user", "form", form);
     }
